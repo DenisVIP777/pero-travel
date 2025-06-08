@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>PERO TRAVEL</title>
+		<meta name="description" content="Краткое емкое описание текста, включающее поисковые запросы пользователей. Тег <description> должен четко и ясно описывать суть содержания, лучше избегать вводных конструкций и общих фраз. Мета-тег <description> должен быть уникальным для каждой страницы сайта.">
+		<meta name="keywords" content="ключевые фразы или слова через запятую (важно для SEO)"/>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/air-datepicker.css">
+		<link rel="stylesheet" href="css/slider.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<link href="favicon.ico" rel="icon">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo">
+					<img src="images/header/logo.png" class="header__image-logo" alt=""/>
+				</a>
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a href="#" class="menu__link">Главная</a></li>
+							<li><a href="#" class="menu__link menu__link_active">Экскурсии</a></li>
+							<li><a href="#" class="menu__link">Личный кабинет</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<div class="wrapper wrapper_our-excursions">
+            <section class="main-section-our-excursions">
+                <div class="main-section-our-excursions__container">
+                    <h1 class="main-section-our-excursions__title">НАШИ ЭКСКУРСИИ</h1>
+                </div>
+                <img src="images/main-section-our-excursions/01.png" class="main-section-our-excursions__image" alt=""/>
+            </section>
+
+            <div class="limited-container">
+                <section class="select-tour">
+                    <div class="select-tour__tabs tabs">
+                        <nav class="tabs__items">
+                            <a data-tab="tab-1" class="tabs__item">АВТОБУСНЫЙ ТУР</a>
+                            <a data-tab="tab-2" class="tabs__item">ДЖИППИНГ</a>
+                            <a data-tab="tab-3" class="tabs__item">ЯХТИНГ</a>
+							<a data-tab="tab-4" class="tabs__item">КАНЬОНИНГ</a>
+                        </nav>
+                        <div class="tabs__body">
+                            <div id="tab-1" class="tabs__block hidden-tab-content">
+                                <form action="#" method="post" class="tabs__form tour-form">
+									<div class="tour-form__item">
+										<input type="text" name="location" class="tour-form__input" placeholder="Локация" value="Абхазия"/>
+										<img src="svgicons/icons/location.svg" class="tour-form__icon" alt="icon"/>
+									</div>
+									<div class="tour-form__item">
+										<input type="text" name="date" id="airdatepicker" class="tour-form__input" value="10 Ноябрь 2021"/>
+										<img src="svgicons/icons/calendar.svg" class="tour-form__icon" alt="icon"/>
+									</div>
+									<div class="tour-form__item">
+										<input type="text" name="persons" class="tour-form__input" placeholder="Группа" value="5 человек"/>
+										<img src="svgicons/icons/persons.svg" class="tour-form__icon" alt="icon"/>
+									</div>
+									<div class="tour-form__item">
+										<button type="submit" class="tour-form__button">Показать</button>
+									</div>
+								</form>
+                            </div>
+                            <div id="tab-2" class="tabs__block hidden-tab-content">
+                                <form action="#" method="post" class="tabs__form tour-form">
+									<div class="tour-form__item">
+										<input type="text" name="location" class="tour-form__input" placeholder="Локация" value="Абхазия"/>
+										<img src="svgicons/icons/location.svg" class="tour-form__icon" alt="icon"/>
+									</div>
+									<div class="tour-form__item">
+										<input type="text" name="date" id="airdatepicker" class="tour-form__input" value="10 Ноябрь 2021"/>
+										<img src="svgicons/icons/calendar.svg" class="tour-form__icon" alt="icon"/>
+									</div>
+									<div class="tour-form__item">
+										<input type="text" name="persons" class="tour-form__input" placeholder="Группа" value="5 человек"/>
+										<img src="svgicons/icons/persons.svg" class="tour-form__icon" alt="icon"/>
+									</div>
+									<div class="tour-form__item">
+										<button type="submit" class="tour-form__button">Показать</button>
+									</div>
+								</form>
+                            </div>
+                            <div id="tab-3" class="tabs__block hidden-tab-content">
+                                <form action="#" method="post" class="tabs__form tour-form">
+									<div class="tour-form__item">
+										<input type="text" name="location" class="tour-form__input" placeholder="Локация" value="Абхазия"/>
+										<img src="svgicons/icons/location.svg" class="tour-form__icon" alt="icon"/>
+									</div>
+									<div class="tour-form__item">
+										<input type="text" name="date" id="airdatepicker" class="tour-form__input" value="10 Ноябрь 2021"/>
+										<img src="svgicons/icons/calendar.svg" class="tour-form__icon" alt="icon"/>
+									</div>
+									<div class="tour-form__item">
+										<input type="text" name="persons" class="tour-form__input" placeholder="Группа" value="5 человек"/>
+										<img src="svgicons/icons/persons.svg" class="tour-form__icon" alt="icon"/>
+									</div>
+									<div class="tour-form__item">
+										<button type="submit" class="tour-form__button">Показать</button>
+									</div>
+								</form>
+                            </div>
+							<div id="tab-4" class="tabs__block hidden-tab-content">
+                                <form action="#" method="post" class="tabs__form tour-form">
+									<div class="tour-form__item">
+										<input type="text" name="location" class="tour-form__input" placeholder="Локация" value="Абхазия"/>
+										<img src="svgicons/icons/location.svg" class="tour-form__icon" alt="icon"/>
+									</div>
+									<div class="tour-form__item">
+										<input type="text" name="date" id="airdatepicker" class="tour-form__input" value="10 Ноябрь 2021"/>
+										<img src="svgicons/icons/calendar.svg" class="tour-form__icon" alt="icon"/>
+									</div>
+									<div class="tour-form__item">
+										<input type="text" name="persons" class="tour-form__input" placeholder="Группа" value="5 человек"/>
+										<img src="svgicons/icons/persons.svg" class="tour-form__icon" alt="icon"/>
+									</div>
+									<div class="tour-form__item">
+										<button type="submit" class="tour-form__button">Показать</button>
+									</div>
+								</form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+				<section class="catalog-tours">
+					<div class="catalog-tours__filters filters">
+						<div class="filters__title">Фильтры</div>
+						<form action="#" class="filters__form">
+							<div data-spollers class="filters__spoller filters-spoller">
+								<div class="filters-spoller__item">
+									<button tabindex="-1" type="button" data-spoller class="filters-spoller__title _active">Стоимость</button>
+									<div class="filters-spoller__body">
+										<div class="filters-spoller__content">
+											<div class="filters-spoller__price-filter price-filter">
+												<div data-range class="price-filter__body">
+													<div class="price-filter__inputs">
+														<input data-range-from="0" autocomplete="off" value="1600" type="text" name="form[]" class="price-filter__input"/>
+														<input data-range-to="10000" autocomplete="off" value="4000" type="text" name="form[]" class="price-filter__input"/>
+													</div>
+													<div data-range-item class="price-filter__range"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="filters-spoller__item">
+									<button tabindex="-1" type="button" data-spoller class="filters-spoller__title _active">Количество человек</button>
+									<div class="filters-spoller__body">
+										<div class="filters-spoller__content">
+											<div class="filters-spoller__select-the-number-of-persons select-the-number-of-persons">
+												<div class="select-the-number-of-persons__item">
+													<input id="one-person" checked type="radio" value="one-person" name="person" class="select-the-number-of-persons__input"/>
+													<label for="one-person" class="select-the-number-of-persons__label">1 чел.</label>
+												</div>
+
+												<div class="select-the-number-of-persons__item">
+													<input id="two-person" type="radio" value="two-person" name="person" class="select-the-number-of-persons__input"/>
+													<label for="two-person" class="select-the-number-of-persons__label">2 чел.</label>
+												</div>
+
+												<div class="select-the-number-of-persons__item">
+													<input id="three-person" type="radio" value="three-person" name="person" class="select-the-number-of-persons__input"/>
+													<label for="three-person" class="select-the-number-of-persons__label">3 чел.</label>
+												</div>
+
+												<div class="select-the-number-of-persons__item">
+													<input id="four-person" type="radio" value="four-person" name="person" class="select-the-number-of-persons__input"/>
+													<label for="four-person" class="select-the-number-of-persons__label">4 чел.</label>
+												</div>
+
+												<div class="select-the-number-of-persons__item">
+													<input id="five-person" type="radio" value="five-person" name="person" class="select-the-number-of-persons__input"/>
+													<label for="five-person" class="select-the-number-of-persons__label">5 чел.</label>
+												</div>
+
+												<div class="select-the-number-of-persons__item">
+													<input id="six-person" type="radio" value="six-person" name="person" class="select-the-number-of-persons__input"/>
+													<label for="six-person" class="select-the-number-of-persons__label">6 чел.</label>
+												</div>
+
+												<div class="select-the-number-of-persons__item">
+													<input id="seven-person" type="radio" value="seven-person" name="person" class="select-the-number-of-persons__input"/>
+													<label for="seven-person" class="select-the-number-of-persons__label">7 чел.</label>
+												</div>
+
+												<div class="select-the-number-of-persons__item">
+													<input id="eight-person" type="radio" value="eight-person" name="person" class="select-the-number-of-persons__input"/>
+													<label for="eight-person" class="select-the-number-of-persons__label">8 чел.</label>
+												</div>
+
+												<div class="select-the-number-of-persons__item">
+													<input id="nine-person" type="radio" value="nine-person" name="person" class="select-the-number-of-persons__input"/>
+													<label for="nine-person" class="select-the-number-of-persons__label">9 чел.</label>
+												</div>
+
+												<div class="select-the-number-of-persons__item">
+													<input id="ten-person" type="radio" value="ten-person" name="person" class="select-the-number-of-persons__input"/>
+													<label for="ten-person" class="select-the-number-of-persons__label">10 чел.</label>
+												</div>
+
+												<div class="select-the-number-of-persons__item select-the-number-of-persons__item_two-columns">
+													<input id="more-ten-person" type="radio" value="more-ten-person" name="person" class="select-the-number-of-persons__input"/>
+													<label for="more-ten-person" class="select-the-number-of-persons__label">Больше 10 чел.</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="filters-spoller__item">
+									<button tabindex="-1" type="button" data-spoller class="filters-spoller__title _active">Место</button>
+									<div class="filters-spoller__body">
+										<div class="filters-spoller__content">
+											<div class="filters-spoller__select-place select-place">
+												<div class="select-place__item">
+													<input id="place-1" checked type="radio" value="abkhazia" name="place" class="select-place__input"/>
+													<label for="place-1" class="select-place__label">Абхазия</label>
+												</div>
+												<div class="select-place__item">
+													<input id="place-2" type="radio" value="red-glade" name="place" class="select-place__input"/>
+													<label for="place-2" class="select-place__label">Красная поляна</label>
+												</div>
+												<div class="select-place__item">
+													<input id="place-3" type="radio" value="sochi" name="place" class="select-place__input"/>
+													<label for="place-3" class="select-place__label">Сочи</label>
+												</div>
+												<div class="select-place__item">
+													<input id="place-4" type="radio" value="adler" name="place" class="select-place__input"/>
+													<label for="place-4" class="select-place__label">Адлер</label>
+												</div>
+												<div class="select-place__item">
+													<input id="place-5" type="radio" value="adler" name="place" class="select-place__input"/>
+													<label for="place-5" class="select-place__label">Адлер</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="filters-spoller__item">
+									<button tabindex="-1" type="button" data-spoller class="filters-spoller__title">Длительность</button>
+									<div class="filters-spoller__body">
+										<div class="filters-spoller__content">
+											<div class="filters-spoller__select-place select-place">
+												<div class="select-place__item">
+													<input id="duration-1" checked type="radio" value="one-day" name="duration" class="select-place__input"/>
+													<label for="duration-1" class="select-place__label">Один день</label>
+												</div>
+												<div class="select-place__item">
+													<input id="duration-2" type="radio" value="two-days" name="duration" class="select-place__input"/>
+													<label for="duration-2" class="select-place__label">Два дня</label>
+												</div>
+												<div class="select-place__item">
+													<input id="duration-3" type="radio" value="three-days" name="duration" class="select-place__input"/>
+													<label for="duration-3" class="select-place__label">Три дня</label>
+												</div>
+												<div class="select-place__item">
+													<input id="duration-4" type="radio" value="four-days" name="duration" class="select-place__input"/>
+													<label for="duration-4" class="select-place__label">Четыре дня</label>
+												</div>
+												<div class="select-place__item">
+													<input id="duration-5" type="radio" value="more-four-days" name="duration" class="select-place__input"/>
+													<label for="duration-5" class="select-place__label">Более четырёх дней</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="filters-spoller__item">
+									<button tabindex="-1" type="button" data-spoller class="filters-spoller__title">Дата</button>
+									<div class="filters-spoller__body">
+										<div class="filters-spoller__content">
+											<div class="tour-form__item">
+												<input type="text" name="filter-date" id="airdatepicker" class="tour-form__input" value="10 Ноябрь 2021"/>
+												<img src="svgicons/icons/calendar.svg" class="tour-form__icon" alt="icon"/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="filters__container-buttons">
+								<button type="submit" class="filters__button-apply">Показать</button>
+								<button type="reset" class="filters__button-reset">
+									<svg class="filters__icon-button-reset"><use xlink:href="svgicons/sprite.svg#filters-reset"></use></svg>
+									<span class="filters__content-button-reset">Сбросить фильтры</span>
+								</button>
+							</div>
+						</form>
+					</div>
+					<div class="catalog-tours__container">
+						<h4 class="catalog-tours__title">Наши туры</h4>
+
+						<div class="catalog-tours__cards-container">
+							<div class="catalog-tours__item card-tour">
+								<div class="card-tour__container-image">
+									<img src="images/card-tour/01.png" class="card-tour__image" alt=""/>
+								</div>
+								<div class="card-tour__body">
+									<h3 class="card-tour__sub-title">Автобусный тур</h3>
+									<h2 class="card-tour__title">Золотое кольцо Абхазии (из Адлера)</h2>
+									<div class="card-tour__tour-info">
+										<div class="card-tour__prices">
+											<div class="card-tour__prices-item">
+												<div class="card-tour__price">
+													<svg class="card-tour__price-icon"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+													<div class="card-tour__price-content">1 618 ₽</div>
+												</div>
+												<div class="card-tour__desc-price">Взрослый билет</div>
+											</div>
+											<div class="card-tour__prices-item">
+												<div class="card-tour__price">
+													<svg class="card-tour__price-icon"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+													<div class="card-tour__price-content">1 412 ₽</div>
+												</div>
+												<div class="card-tour__desc-price">Детский билет</div>
+											</div>
+										</div>
+										<div class="card-tour__tour-time">
+											<svg class="card-tour__tour-time-icon"><use xlink:href="svgicons/sprite.svg#watch"></use></svg>
+											<div class="card-tour__tour-time-content">2,5 часа</div>
+										</div>
+									</div>
+									<p class="card-tour__description">
+										Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...
+									</p>
+									<div class="card-tour__container-buttons">
+										<a href="#" class="card-tour__button">Подробнее</a>
+										<a href="#" class="card-tour__button-favorite">
+											<svg class="card-tour__icon-favorite"><use xlink:href="svgicons/sprite.svg#favorite"></use></svg>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="catalog-tours__item card-tour">
+								<div class="card-tour__container-image">
+									<img src="images/card-tour/01.png" class="card-tour__image" alt=""/>
+								</div>
+								<div class="card-tour__body">
+									<h3 class="card-tour__sub-title">Автобусный тур</h3>
+									<h2 class="card-tour__title">Золотое кольцо Абхазии (из Адлера)</h2>
+									<div class="card-tour__tour-info">
+										<div class="card-tour__prices">
+											<div class="card-tour__prices-item">
+												<div class="card-tour__price">
+													<svg class="card-tour__price-icon"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+													<div class="card-tour__price-content">1 618 ₽</div>
+												</div>
+												<div class="card-tour__desc-price">Взрослый билет</div>
+											</div>
+											<div class="card-tour__prices-item">
+												<div class="card-tour__price">
+													<svg class="card-tour__price-icon"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+													<div class="card-tour__price-content">1 412 ₽</div>
+												</div>
+												<div class="card-tour__desc-price">Детский билет</div>
+											</div>
+										</div>
+										<div class="card-tour__tour-time">
+											<svg class="card-tour__tour-time-icon"><use xlink:href="svgicons/sprite.svg#watch"></use></svg>
+											<div class="card-tour__tour-time-content">2,5 часа</div>
+										</div>
+									</div>
+									<p class="card-tour__description">
+										Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...
+									</p>
+									<div class="card-tour__container-buttons">
+										<a href="#" class="card-tour__button">Подробнее</a>
+										<a href="#" class="card-tour__button-favorite">
+											<svg class="card-tour__icon-favorite"><use xlink:href="svgicons/sprite.svg#favorite"></use></svg>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="catalog-tours__item card-tour">
+								<div class="card-tour__container-image">
+									<img src="images/card-tour/01.png" class="card-tour__image" alt=""/>
+								</div>
+								<div class="card-tour__body">
+									<h3 class="card-tour__sub-title">Автобусный тур</h3>
+									<h2 class="card-tour__title">Золотое кольцо Абхазии (из Адлера)</h2>
+									<div class="card-tour__tour-info">
+										<div class="card-tour__prices">
+											<div class="card-tour__prices-item">
+												<div class="card-tour__price">
+													<svg class="card-tour__price-icon"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+													<div class="card-tour__price-content">1 618 ₽</div>
+												</div>
+												<div class="card-tour__desc-price">Взрослый билет</div>
+											</div>
+											<div class="card-tour__prices-item">
+												<div class="card-tour__price">
+													<svg class="card-tour__price-icon"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+													<div class="card-tour__price-content">1 412 ₽</div>
+												</div>
+												<div class="card-tour__desc-price">Детский билет</div>
+											</div>
+										</div>
+										<div class="card-tour__tour-time">
+											<svg class="card-tour__tour-time-icon"><use xlink:href="svgicons/sprite.svg#watch"></use></svg>
+											<div class="card-tour__tour-time-content">2,5 часа</div>
+										</div>
+									</div>
+									<p class="card-tour__description">
+										Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...
+									</p>
+									<div class="card-tour__container-buttons">
+										<a href="#" class="card-tour__button">Подробнее</a>
+										<a href="#" class="card-tour__button-favorite">
+											<svg class="card-tour__icon-favorite"><use xlink:href="svgicons/sprite.svg#favorite"></use></svg>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="catalog-tours__item card-tour">
+								<div class="card-tour__container-image">
+									<img src="images/card-tour/01.png" class="card-tour__image" alt=""/>
+								</div>
+								<div class="card-tour__body">
+									<h3 class="card-tour__sub-title">Автобусный тур</h3>
+									<h2 class="card-tour__title">Золотое кольцо Абхазии (из Адлера)</h2>
+									<div class="card-tour__tour-info">
+										<div class="card-tour__prices">
+											<div class="card-tour__prices-item">
+												<div class="card-tour__price">
+													<svg class="card-tour__price-icon"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+													<div class="card-tour__price-content">1 618 ₽</div>
+												</div>
+												<div class="card-tour__desc-price">Взрослый билет</div>
+											</div>
+											<div class="card-tour__prices-item">
+												<div class="card-tour__price">
+													<svg class="card-tour__price-icon"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+													<div class="card-tour__price-content">1 412 ₽</div>
+												</div>
+												<div class="card-tour__desc-price">Детский билет</div>
+											</div>
+										</div>
+										<div class="card-tour__tour-time">
+											<svg class="card-tour__tour-time-icon"><use xlink:href="svgicons/sprite.svg#watch"></use></svg>
+											<div class="card-tour__tour-time-content">2,5 часа</div>
+										</div>
+									</div>
+									<p class="card-tour__description">
+										Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...
+									</p>
+									<div class="card-tour__container-buttons">
+										<a href="#" class="card-tour__button">Подробнее</a>
+										<a href="#" class="card-tour__button-favorite">
+											<svg class="card-tour__icon-favorite"><use xlink:href="svgicons/sprite.svg#favorite"></use></svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="pgination">
+							<div class="pgination__content">
+								<a href="#" class="pgination__element pgination__element_prev"><svg class="pgination__icon"><use xlink:href="svgicons/sprite.svg#main-arrow-prev"></use></svg></a>
+								<div class="pgination__container-links">
+									<a class="pgination__link _active">1</a>
+									<a href="#" class="pgination__link">2</a>
+									<a href="#" class="pgination__link">...</a>
+									<a href="#" class="pgination__link">5</a>
+								</div>
+								<a href="#" class="pgination__element pgination__element_next"><svg class="pgination__icon"><use xlink:href="svgicons/sprite.svg#main-arrow-next"></use></svg></a>
+							</div>
+						</div>
+					</div>
+				</section>
+            </div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__column footer__column_left ">
+					<a href="#" class="footer__container-logo">
+						<img src="images/footer/logo.png" class="footer__logo" alt="logo"/>
+					</a>
+					<ul class="footer__menu" data-da=".footer__column_right, 670, first">
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Главная</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Экскурсии</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Личный кабинет</a></li>
+					</ul>
+				</div>
+				<div class="footer__column footer__column_right">
+					<ul class="footer__contacts-list" data-da=".footer__container-social-media, 670, first">
+						<li class="footer__contacts-list-item">
+							<a href="#" class="footer__contacts-list-link">
+								<svg class="footer__contacts-list-icon footer__contacts-list-icon_whatsapp"><use xlink:href="svgicons/sprite.svg#whatsapp"></use></svg>
+								<span class="footer__contacts-list-item-content">+7 964 944 18 74</span>
+							</a>
+						</li>
+						<li class="footer__contacts-list-item">
+							<a href="#" class="footer__contacts-list-link">
+								<svg class="footer__contacts-list-icon footer__contacts-list-icon_telegram"><use xlink:href="svgicons/sprite.svg#telegram"></use></svg>
+								<span class="footer__contacts-list-item-content">+7 918 919 98 28</span>
+							</a>
+						</li>
+						<li class="footer__contacts-list-item">
+							<a href="#" class="footer__contacts-list-link">
+								<svg class="footer__contacts-list-icon footer__contacts-list-icon_telegram"><use xlink:href="svgicons/sprite.svg#telegram"></use></svg>
+								<span class="footer__contacts-list-item-content">Телеграм-бот PeroTravel</span>
+							</a>
+						</li>
+					</ul>
+					<div class="footer__container-social-media">
+						<a href="" class="footer__mail">
+							<svg class="footer__mail-icon"><use xlink:href="svgicons/sprite.svg#mail"></use></svg>
+							<span class="footer__mail-content">office@perotravel.ru</span>
+						</a>
+						<ul class="footer__social-media" data-da=".footer__column_left, 670, last">
+							<li class="footer__social-media-item">
+								<a href="#" class="footer__social-media-link"><svg class="footer__social-media-icon footer__social-media-icon_vk"><use xlink:href="svgicons/sprite.svg#vk"></use></svg></a>
+							</li>
+							<li class="footer__social-media-item">
+								<a href="#" class="footer__social-media-link"><svg class="footer__social-media-icon footer__social-media-icon_inst"><use xlink:href="svgicons/sprite.svg#inst"></use></svg></a>
+							</li>
+							<li class="footer__social-media-item">
+								<a href="#" class="footer__social-media-link"><svg class="footer__social-media-icon footer__social-media-icon_facebook"><use xlink:href="svgicons/sprite.svg#facebook"></use></svg></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!--Подключаем jQuery.-->
+		<script src="js/jquery-3.6.0.min.js"></script>
+
+		<!--Подключение датапикера-->
+		<script src="js/air-datepicker.js"></script>
+
+		<!--Подключаем слайдер Swiper-->
+		<script src="js/swiper-bundle.min.js"></script>
+		
+		<!--Подключаем анимации wow.js-->
+		<script src="js/wow.min.js"></script>
+        <script src="js/wow.js"></script>
+
+		<!--Подключения ползунков цен-->
+		<script src="js/nouislider.js"></script>
+
+		<!--Подключаем файл скриптов.-->
+		<script src="js/script.js"></script>
+	</body>
+</html>
