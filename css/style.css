@@ -2935,7 +2935,8 @@ body._lock {
 }
 
 .select-place__label {
-	display: inline-flex;
+	/* display: inline-flex; */
+	display: flex;
 	position: relative;
 	cursor: pointer;
 
