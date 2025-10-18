@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>PERO TRAVEL</title>
+		<meta name="description" content="Краткое емкое описание текста, включающее поисковые запросы пользователей. Тег <description> должен четко и ясно описывать суть содержания, лучше избегать вводных конструкций и общих фраз. Мета-тег <description> должен быть уникальным для каждой страницы сайта.">
+		<meta name="keywords" content="ключевые фразы или слова через запятую (важно для SEO)"/>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/air-datepicker.css">
+		<link rel="stylesheet" href="css/slider.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<link href="favicon.ico" rel="icon">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo">
+					<img src="images/header/logo.png" class="header__image-logo" alt=""/>
+				</a>
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a href="#" class="menu__link menu__link_active">Главная</a></li>
+							<li><a href="#" class="menu__link">Экскурсии</a></li>
+							<li><a href="#" class="menu__link">Личный кабинет</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<div class="wrapper">
+			<section class="tour-overview-main-section">
+                <div class="tour-overview-main-section__container">
+                    <div class="tour-overview-main-section__content">
+                        <h2 class="tour-overview-main-section__sub-title">Автобусный тур</h2>
+                        <h1 class="tour-overview-main-section__title">ЗОЛОТОЕ КОЛЬЦО АБХАЗИИ <br/> (ИЗ АДЛЕРА)</h1>
+                        <div class="tour-overview-main-section__container-buttons">
+                            <a href="#" class="tour-overview-main-section__button">
+                                <span class="tour-overview-main-section__button-content">К другим экскурсиям</span>
+                                <svg class="tour-overview-main-section__button-icon"><use xlink:href="svgicons/sprite.svg#arrow-next"></use></svg>
+                            </a>
+                            <a href="" class="tour-overview-main-section__button-favorite">
+                                <svg class="tour-overview-main-section__button-favorite-icon"><use xlink:href="svgicons/sprite.svg#favorite"></use></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour-overview-main-section__blakout"></div>
+                <img src="images/tour-overview-main-section/01.png" class="tour-overview-main-section__image" alt=""/>
+            </section>
+
+			<section class="about-tour">
+				<div class="about-tour__container">
+					<div class="about-tour__info">
+						<h4 class="about-tour__title">Описание экскурсии</h4>
+						<p class="about-tour__description">
+							Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок.
+						</p>
+					</div>
+					<div class="about-tour__info-cards info-cards">
+						<div class="info-cards__item">
+							<div class="info-cards__decoration"></div>
+							<div class="info-cards__content">
+								<div class="info-cards__head">
+									<svg class="info-cards__icon info-cards__icon_money"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+									<div class="info-cards__meaning">1 618 ₽</div>
+								</div>
+								<div class="info-cards__desc">Взрослый билет</div>
+							</div>
+						</div>
+						<div class="info-cards__item">
+							<div class="info-cards__decoration"></div>
+							<div class="info-cards__content">
+								<div class="info-cards__head">
+									<svg class="info-cards__icon info-cards__icon_money"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+									<div class="info-cards__meaning">1 412 ₽</div>
+								</div>
+								<div class="info-cards__desc">Детский билет</div>
+							</div>
+						</div>
+						<div class="info-cards__item">
+							<div class="info-cards__decoration"></div>
+							<div class="info-cards__content">
+								<div class="info-cards__head">
+									<svg class="info-cards__icon info-cards__icon_watch"><use xlink:href="svgicons/sprite.svg#watch"></use></svg>
+									<div class="info-cards__meaning">12 часов</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-travels-calendar">
+				<div class="section-travels-calendar__wrapper">
+					<div class="section-travels-calendar__container">
+						<div class="section-travels-calendar__content">
+							<div class="section-travels-calendar__container-title">
+								<h4 class="section-travels-calendar__title">Календарь путешествий</h4>
+							</div>
+							
+							<div class="section-travels-calendar__calendar travels-calendar">
+								<div class="calendar__header">
+									<button type="button" id="prevBtn" class="calendar__button">
+										<img src="svgicons/travels-calendar/arrow-prev.svg" class="calendar__button-icon" alt=""/>
+									</button>
+									<div id="monthYear" class="calendar__month-year"></div>
+									<button type="button" id="nextBtn" class="calendar__button">
+										<img src="svgicons/travels-calendar/arrow-next.svg" class="calendar__button-icon" alt=""/>
+									</button>
+								</div>
+
+								<div class="calendar__days calendar-days">
+									<div class="calendar-days__item">ПН</div>
+									<div class="calendar-days__item">ВТ</div>
+									<div class="calendar-days__item">СР</div>
+									<div class="calendar-days__item">ЧТ</div>
+									<div class="calendar-days__item">ПТ</div>
+									<div class="calendar-days__item">СБ</div>
+									<div class="calendar-days__item">ВС</div>
+								</div>
+
+								<div id="dates" class="calendar__dates calendar-dates"></div>
+							</div>
+						</div>
+					</div>
+					<div class="section-travels-calendar__container-image">
+						<img src="images/section-travels-calendar/01.png" class="section-travels-calendar__image" alt=""/>
+					</div>
+				</div>
+			</section>
+
+			<section class="route-description">
+				<div class="route-description__content">
+					<div class="route-description__container">
+						<div class="route-description__body">
+							<h3 class="route-description__title">Описание маршрута</h3>
+							<ul class="route-description__list">
+								<li class="route-description__item">Город Гагра, Колоннада, ресторан "Гагрипш", Парк принца Ольденбурского;</li>
+								<li class="route-description__item">Смотровая площадка "Прощай Родина", "Чабгарский" карниз, Подвесной мост через реку "Бзыбь";</li>
+								<li class="route-description__item">Дегустация сыра, меда, вина, чачи (входит в стоимость экскурсии), Голубое Озеро, Юпшарский каньон ("Каменный мешок"), Озеро "Рица", Водопады "Девичьи и мужские слезы".</li>
+							</ul>
+							<div class="route-description__sub-title">Далее на выбор:</div>
+							<ul class="route-description__list">
+								<li class="route-description__item">Монастырь "Новый Афон", Новоафонская Пещера, "Рукотворный" водопад, храм "Симона Кананита", Лебединое озеро.</li>
+								<li class="route-description__item">Термальный источник в с. Приморское.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="route-description__slider-container">
+					<div class="route-description__slider swiper-container">
+						<div class="route-description__slider-wrapper swiper-wrapper">
+							<div class="route-description__slider-slide swiper-slide">
+								<div class="route-description__slide-content">
+									<div class="route-description__name">Гагра</div>
+								</div>
+								<img src="images/route-description/01.png" class="route-description__slide-image" alt=""/>
+							</div>
+
+							<div class="route-description__slider-slide swiper-slide">
+								<div class="route-description__slide-content">
+									<div class="route-description__name">Коллонада</div>
+								</div>
+								<img src="images/route-description/02.png" class="route-description__slide-image" alt=""/>
+							</div>
+
+							<div class="route-description__slider-slide swiper-slide">
+								<div class="route-description__slide-content">
+									<div class="route-description__name">Гагра</div>
+								</div>
+								<img src="images/route-description/01.png" class="route-description__slide-image" alt=""/>
+							</div>
+
+							<div class="route-description__slider-slide swiper-slide">
+								<div class="route-description__slide-content">
+									<div class="route-description__name">Коллонада</div>
+								</div>
+								<img src="images/route-description/02.png" class="route-description__slide-image" alt=""/>
+							</div>
+
+							<div class="route-description__slider-slide swiper-slide">
+								<div class="route-description__slide-content">
+									<div class="route-description__name">Гагра</div>
+								</div>
+								<img src="images/route-description/01.png" class="route-description__slide-image" alt=""/>
+							</div>
+
+							<div class="route-description__slider-slide swiper-slide">
+								<div class="route-description__slide-content">
+									<div class="route-description__name">Коллонада</div>
+								</div>
+								<img src="images/route-description/02.png" class="route-description__slide-image" alt=""/>
+							</div>
+						</div>
+
+						<div class="route-description__navigation">
+							<!--Стрелки-->
+							<div class="route-description__container-buttons">
+								<div class="route-description__button route-description__button-prev">
+									<svg class="route-description__button-icon"><use xlink:href="svgicons/sprite.svg#slider-button-prev"></use></svg>
+								</div>
+								<div class="route-description__button route-description__button-next">
+									<svg class="route-description__button-icon"><use xlink:href="svgicons/sprite.svg#slider-button-next"></use></svg>
+								</div>
+							</div>
+
+							<!--Полоса прокрутки-->
+							<div class="route-description__scrollbar swiper-scrollbar"></div>
+						</div>				
+					</div>
+				</div>
+			</section>
+
+			<section class="additional-expenses">
+				<div class="additional-expenses__container">
+					<h3 class="additional-expenses__title">Дополнительные расходы (по желанию)</h3>
+					<div class="additional-expenses__info-cards info-cards">
+						<div class="info-cards__item">
+							<div class="info-cards__decoration"></div>
+							<div class="info-cards__content">
+								<div class="info-cards__head">
+									<svg class="info-cards__icon info-cards__icon_money"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+									<div class="info-cards__meaning">200 ₽</div>
+								</div>
+								<div class="info-cards__desc">Дача Сталина</div>
+							</div>
+						</div>
+						<div class="info-cards__item">
+							<div class="info-cards__decoration"></div>
+							<div class="info-cards__content">
+								<div class="info-cards__head">
+									<svg class="info-cards__icon info-cards__icon_money"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+									<div class="info-cards__meaning">200 ₽</div>
+								</div>
+								<div class="info-cards__desc">Молочный водопад</div>
+							</div>
+						</div>
+						<div class="info-cards__item">
+							<div class="info-cards__decoration"></div>
+							<div class="info-cards__content">
+								<div class="info-cards__head">
+									<svg class="info-cards__icon info-cards__icon_money"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+									<div class="info-cards__meaning">500 ₽</div>
+								</div>
+								<div class="info-cards__desc">Новоафинская пещера</div>
+							</div>
+						</div>
+						<div class="info-cards__item">
+							<div class="info-cards__decoration"></div>
+							<div class="info-cards__content">
+								<div class="info-cards__head">
+									<svg class="info-cards__icon info-cards__icon_money"><use xlink:href="svgicons/sprite.svg#money-tour-card"></use></svg>
+									<div class="info-cards__meaning">500 ₽</div>
+								</div>
+								<div class="info-cards__desc">Термальный источник</div>
+							</div>
+						</div>
+						<div class="info-cards__item">
+							<div class="info-cards__decoration"></div>
+							<div class="info-cards__content">
+								<div class="info-cards__desc">Обед</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="important-information">
+				<div class="important-information__container">
+					<h3 class="important-information__title">Важная информация</h3>
+					<div class="important-information__body">
+						<div class="important-information__info">
+							<p class="important-information__description">При пересечении границы (Россия-Абхазия) при себе иметь:</p>
+							<ul class="important-information__list">
+								<li class="important-information__item important-item">
+									<div class="important-item__container-image">
+										<img src="svgicons/important-information/01.svg" class="important-item__image" alt=""/>
+									</div>
+									<div class="important-item__body">
+										<div class="important-item__title">Паспорт гражданина РФ</div>
+									</div>
+								</li>
+
+								<li class="important-information__item important-item">
+									<div class="important-item__container-image">
+										<img src="svgicons/important-information/01.svg" class="important-item__image" alt=""/>
+									</div>
+									<div class="important-item__body">
+										<div class="important-item__title">Гражданам до 14 лет свидетельство о рождении</div>
+										<div class="important-item__description">Несовершеннолетние дети пересекают границу в сопровождении родителей, в сопровождении законного представителя (нотариально заверенная доверенность с указанием страны вывоза ребенка).</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="important-information__cards important-cards">
+							<ul class="important-cards__list">
+								<li class="important-cards__item">
+									<div class="important-cards__text">Иностранным гражданам въезд в Абхазию ограничен, кроме граждан Украины, республик ДНР и ЛНР.</div>
+									<img src="svgicons/important-information/02.svg" class="important-cards__icon" alt=""/>
+								</li>
+
+								<li class="important-cards__item">
+									<div class="important-cards__text">При возвращении из Абхазии в Россию сдавать ПЦР-тест не нужно, на карантин помещать не будут (Постановление Правительства РФ 1996-Р от 01.08.2020).</div>
+									<img src="svgicons/important-information/02.svg" class="important-cards__icon" alt=""/>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="gallery">
+				<div class="gallery__head">
+					<h3 class="gallery__title title">Галерея тура</h3>
+					<a href="#" class="gallery__see-more-link see-more-link">Смотреть все</a>
+				</div>
+
+				<div class="gallery__body">
+					<div class="gallery__item gallery__item_1">
+						<img src="images/gallery/01.png" class="gallery__image" alt=""/>
+					</div>
+					<div class="gallery__item gallery__item_2">
+						<img src="images/gallery/10.png" class="gallery__image" alt=""/>
+					</div>
+					<div class="gallery__item gallery__item_3">
+						<img src="images/gallery/03.png" class="gallery__image" alt=""/>
+					</div>
+					<div class="gallery__item gallery__item_4">
+						<img src="images/gallery/09.png" class="gallery__image" alt=""/>
+					</div>
+					<div class="gallery__item gallery__item_5">
+						<img src="images/gallery/05.png" class="gallery__image" alt=""/>
+					</div>
+					<div class="gallery__item gallery__item_6">
+						<img src="images/gallery/06.png" class="gallery__image" alt=""/>
+					</div>
+					<div class="gallery__item gallery__item_7">
+						<img src="images/gallery/07.png" class="gallery__image" alt=""/>
+					</div>
+					<div class="gallery__item gallery__item_8">
+						<img src="images/gallery/08.png" class="gallery__image" alt=""/>
+					</div>
+				</div>
+			</section>
+
+			<section class="reviews">
+				<div class="reviews__head">
+					<h3 class="reviews__title title">Отзывы</h3>
+					<a href="#" class="reviews__see-more-link see-more-link">Смотреть все</a>
+				</div>
+				<div class="reviews__slider-container">
+					<div class="reviews__slider swiper-container">
+						<div class="reviews__slider-wrapper swiper-wrapper">
+							<div class="reviews__slider-slide swiper-slide">
+								<div class="reviews__slider-slide-content">
+									<div class="reviews__container-image">
+										<img src="images/reviews/01.png" class="reviews__image" alt=""/>
+									</div>
+									<div class="reviews__slider-content">
+										<div class="reviews__name-author">Иван Иванов, 25 лет</div>
+										<p class="reviews__comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+									<img src="svgicons/reviews-icon.svg" class="reviews__icon" alt=""/>
+								</div>
+							</div>
+
+							<div class="reviews__slider-slide swiper-slide">
+								<div class="reviews__slider-slide-content">
+									<div class="reviews__container-image">
+										<img src="images/reviews/02.png" class="reviews__image" alt=""/>
+									</div>
+									<div class="reviews__slider-content">
+										<div class="reviews__name-author">Иван Иванов, 25 лет</div>
+										<p class="reviews__comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+									<img src="svgicons/reviews-icon.svg" class="reviews__icon" alt=""/>
+								</div>
+							</div>
+						</div>
+
+						<div class="reviews__navigation">
+							<!--Стрелки-->
+							<div class="reviews__container-buttons">
+								<div class="reviews__button reviews__button-prev">
+									<svg class="reviews__button-icon"><use xlink:href="svgicons/sprite.svg#slider-button-prev"></use></svg>
+								</div>
+								<div class="reviews__button reviews__button-next">
+									<svg class="reviews__button-icon"><use xlink:href="svgicons/sprite.svg#slider-button-next"></use></svg>
+								</div>
+							</div>
+
+							<!--Полоса прокрутки-->
+							<div class="reviews__scrollbar swiper-scrollbar"></div>
+						</div>					
+					</div>
+				</div>
+			</section>
+
+			<section class="book-a-tour">
+				<div class="book-a-tour__container-image">
+					<img src="images/book-a-tour/01.png" class="book-a-tour__image" alt=""/>
+				</div>
+				<div class="book-a-tour__content">
+					<div class="book-a-tour__container">
+						<div class="book-a-tour__body">
+							<h3 class="book-a-tour__title">Забронировать тур</h3>
+							<form action="#" method="post" class="book-a-tour__form">
+								<div class="book-a-tour__container-inputs">
+									<div class="book-a-tour__container-input">
+										<input id="airdatepicker" type="text" class="book-a-tour__input" placeholder="Введите дату" value="10 ноября 2021"/>
+										<img src="svgicons/icons/calendar.svg" class="book-a-tour__icon-for-input" alt=""/>
+									</div>
+									<div class="book-a-tour__container-input">
+										<input type="text" class="book-a-tour__input" placeholder="Количество взрослых" value="5 взрослых"/>
+										<img src="svgicons/icons/persons.svg" class="book-a-tour__icon-for-input" alt=""/>
+									</div>
+									<div class="book-a-tour__container-input">
+										<input type="text" class="book-a-tour__input" placeholder="Количество детей"/>
+										<img src="svgicons/icons/persons.svg" class="book-a-tour__icon-for-input" alt=""/>
+									</div>
+								</div>
+								<div class="book-a-tour__container-buttons">
+									<button type="submit" class="book-a-tour__button">Забронировать</button>
+									<a href="#" class="book-a-tour__button-favorite">
+										<svg class="book-a-tour__icon-favorite"><use xlink:href="svgicons/sprite.svg#favorite"></use></svg>
+									</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__column footer__column_left ">
+					<a href="#" class="footer__container-logo">
+						<img src="images/footer/logo.png" class="footer__logo" alt="logo"/>
+					</a>
+					<ul class="footer__menu" data-da=".footer__column_right, 670, first">
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Главная</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Экскурсии</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Личный кабинет</a></li>
+					</ul>
+				</div>
+				<div class="footer__column footer__column_right">
+					<ul class="footer__contacts-list" data-da=".footer__container-social-media, 670, first">
+						<li class="footer__contacts-list-item">
+							<a href="#" class="footer__contacts-list-link">
+								<svg class="footer__contacts-list-icon footer__contacts-list-icon_whatsapp"><use xlink:href="svgicons/sprite.svg#whatsapp"></use></svg>
+								<span class="footer__contacts-list-item-content">+7 964 944 18 74</span>
+							</a>
+						</li>
+						<li class="footer__contacts-list-item">
+							<a href="#" class="footer__contacts-list-link">
+								<svg class="footer__contacts-list-icon footer__contacts-list-icon_telegram"><use xlink:href="svgicons/sprite.svg#telegram"></use></svg>
+								<span class="footer__contacts-list-item-content">+7 918 919 98 28</span>
+							</a>
+						</li>
+						<li class="footer__contacts-list-item">
+							<a href="#" class="footer__contacts-list-link">
+								<svg class="footer__contacts-list-icon footer__contacts-list-icon_telegram"><use xlink:href="svgicons/sprite.svg#telegram"></use></svg>
+								<span class="footer__contacts-list-item-content">Телеграм-бот PeroTravel</span>
+							</a>
+						</li>
+					</ul>
+					<div class="footer__container-social-media">
+						<a href="" class="footer__mail">
+							<svg class="footer__mail-icon"><use xlink:href="svgicons/sprite.svg#mail"></use></svg>
+							<span class="footer__mail-content">office@perotravel.ru</span>
+						</a>
+						<ul class="footer__social-media" data-da=".footer__column_left, 670, last">
+							<li class="footer__social-media-item">
+								<a href="#" class="footer__social-media-link"><svg class="footer__social-media-icon footer__social-media-icon_vk"><use xlink:href="svgicons/sprite.svg#vk"></use></svg></a>
+							</li>
+							<li class="footer__social-media-item">
+								<a href="#" class="footer__social-media-link"><svg class="footer__social-media-icon footer__social-media-icon_inst"><use xlink:href="svgicons/sprite.svg#inst"></use></svg></a>
+							</li>
+							<li class="footer__social-media-item">
+								<a href="#" class="footer__social-media-link"><svg class="footer__social-media-icon footer__social-media-icon_facebook"><use xlink:href="svgicons/sprite.svg#facebook"></use></svg></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!--Подключаем jQuery.-->
+		<script src="js/jquery-3.6.0.min.js"></script>
+
+		<!--Подключение датапикера-->
+		<script src="js/air-datepicker.js"></script>
+
+		<!--Подключаем слайдер Swiper-->
+		<script src="js/swiper-bundle.min.js"></script>
+		
+		<!--Подключаем анимации wow.js-->
+		<script src="js/wow.min.js"></script>
+        <script src="js/wow.js"></script>
+
+		<!--Подключаем файл скриптов.-->
+		<script src="js/script.js"></script>
+	</body>
+</html>
